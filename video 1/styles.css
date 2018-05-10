@@ -1,0 +1,53 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh; /* I changed my mind, I'm using 100 vertical height now. */
+    background-image: url(cb.jpg);
+    background-size: cover;
+    background-position: left center;
+}
+
+/* Text over Image */
+
+.hero .headings {
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+}
+
+.hero .headings h1 {
+    color: #fff;
+    font-size: 70px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    font-weight: 700;
+    letter-spacing: 0.0138889em;
+}
+
+.hero .headings h3 {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 1.1em;
+    font-weight: 400;
+    letter-spacing: 0.0138889em;
+}
+ 
+/* End of Text over Image */
+
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgb(19, 11, 2);
+    opacity: 0.3;
+}
