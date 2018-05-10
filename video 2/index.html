@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front Cover</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="burger.ico" type="image/ico" sizes="128x128">
+</head>
+ 
+<body>  
+
+  <div class="header">
+    <div class="color-overlay"></div>
+    <div class="inner">
+      <h1>Best Burger in</h1>
+      <h1>Illinois</h1>
+      <h3>LOCALLY SOURCED x CRAFTED WITH LOVE</h3>
+    </div>
+
+    <div class="navbar" id="nav">
+
+      <!-- Navigation -->
+      <ul>
+        <li>Home</li>
+        <li style="margin-right:120px;">About Me</li>
+        <div class="logo"></div>
+        <li style="margin-left:120px;">Portfolio</li>
+        <li>Contact Us</li>
+      </ul>
+
+      <!-- Hamburger menu -->    
+      <span class="open-side">
+        <a href="#" onclick="toggleSideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+
+    </div>
+
+  </div><!-- header -->
+
+  <!-- Side menu -->
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closesideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About Me</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  <script>
+    function toggleSideMenu() {
+      let w = document.getElementById('side-menu').style.width;
+      let wLength = w.length;
+      // Turn off
+      if (wLength!=0) {
+        document.getElementById('side-menu').style.width = '0';
+      }
+      // Turn on
+      if (wLength==0 || wLength==3) {
+        document.getElementById('side-menu').style.width = '250px';
+      }
+    }
+
+    function closesideMenu() {
+      document.getElementById('side-menu').style.width = '0';
+    }
+  </script>
+
+</body>
+</html>
