@@ -1,3 +1,3 @@
 # pacific
 SquareSpace template Pacific being reproduced from scratch.
-## I added this.
+## I added this. Good stuff!
